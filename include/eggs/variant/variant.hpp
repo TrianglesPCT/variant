@@ -97,6 +97,9 @@ namespace eggs { namespace variants
         {};
 
         ///////////////////////////////////////////////////////////////////////
+#if EGGS_CXX17_STD_HAS_IS_NOTHROW_SWAPPABLE
+        using std::is_nothrow_swappable;
+#else
         namespace _swap
         {
             using std::swap;
@@ -117,6 +120,7 @@ namespace eggs { namespace variants
               , _swap::is_nothrow_swappable<T>::value
             >
         {};
+#endif
 
         ///////////////////////////////////////////////////////////////////////
         struct access

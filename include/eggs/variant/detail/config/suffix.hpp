@@ -116,10 +116,28 @@
 #  undef EGGS_CXX11_STD_HAS_ALIGNED_UNION_DEFINED
 #endif
 
+/// constexpr std::addressof support
+#ifndef EGGS_CXX17_STD_HAS_CONSTEXPR_ADDRESSOF
+#  undef EGGS_CXX17_STD_HAS_CONSTEXPR_ADDRESSOF
+#  undef EGGS_CXX17_STD_HAS_CONSTEXPR_ADDRESSOF_DEFINED
+#endif
+
+/// std::invoke support
+#ifndef EGGS_CXX17_STD_HAS_INVOKE
+#  undef EGGS_CXX17_STD_HAS_INVOKE
+#  undef EGGS_CXX17_STD_HAS_INVOKE_DEFINED
+#endif
+
 /// std::is_nothrow_* support
 #ifdef EGGS_CXX11_STD_HAS_IS_NOTHROW_TRAITS_DEFINED
 #  undef EGGS_CXX11_STD_HAS_IS_NOTHROW_TRAITS
 #  undef EGGS_CXX11_STD_HAS_IS_NOTHROW_TRAITS_DEFINED
+#endif
+
+/// std::is_nothrow_swappable support
+#ifndef EGGS_CXX17_STD_HAS_IS_NOTHROW_SWAPPABLE
+#  undef EGGS_CXX17_STD_HAS_IS_NOTHROW_SWAPPABLE
+#  undef EGGS_CXX17_STD_HAS_IS_NOTHROW_SWAPPABLE_DEFINED
 #endif
 
 /// std::is_trivially_copyable support
