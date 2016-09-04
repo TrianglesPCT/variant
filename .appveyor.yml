@@ -17,6 +17,7 @@ branches:
   only:
     - master
     - develop
+    - relops
 
 build_script:
   - mkdir build
